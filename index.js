@@ -15,9 +15,23 @@ app.post('/cats/black', (req, res) => {
   console.log('Log from /cats/black');
 });
 app.get('/dogs', (req, res) => res.send('<h1>Dogs Pages</h1>'));
-app.get('/cats/:subject', (req, res) =>
-  res.send(`<h1>Generic /cats/ ${req.params.subject}</h1>`)
-);
+app.get('/cats/search/', (req, res) => {
+  let response = '<h1>Cats Page Search:</h1>';
+  for (const key in req.query) {
+    response += `<h2>${key}:  ${req.query[key]};`;
+  }
+  res.send(response);
+  console.log(req.query);
+});
+// app.get('/cats/q=:subject&:id', (req, res) =>
+//   res.send(
+//     `<h1>cats/ Subject:${req.params.subject}, ID: ${req.params.id} </h1>`
+//   )
+// );
+
+app.get('*', (req, res) => {
+  res.send('<h1>Page Not found</h1>');
+});
 
 app.use(() => {
   console.log('We got a new request!!!!');
