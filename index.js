@@ -7,11 +7,15 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 
 // app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/index.html')));
-
+let sum = 0;
 app.get('/', (req, res) => {
-  res.render('home');
+  const randomNumber = Math.floor(Math.random() * 101);
+  sum += randomNumber;
+  res.render('home', { randomNumber, sum });
 });
-
+app.get('/:subtopic', (req, res) => {
+  res.render('subtopic', { subtopic: req.params.subtopic });
+});
 // app.get('/cats/black', (req, res) => {
 //   res.send('<h1>Cats Pages--- black cats</h1>');
 // });
