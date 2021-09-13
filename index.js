@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const port = 3000;
+const forumData = require('./data.json');
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
@@ -13,8 +14,26 @@ app.get('/', (req, res) => {
   sum += randomNumber;
   res.render('home', { randomNumber, sum });
 });
-app.get('/:subtopic', (req, res) => {
-  res.render('subtopic', { subtopic: req.params.subtopic });
+
+app.get('/topics/:subtopic', (req, res) => {
+  const topic = req.params.subtopic.toLowerCase();
+  const data = forumData[topic]
+    ? forumData[topic]
+    : {
+        name: `The topic you searched:${topic}`,
+        description: `Sorry, no relevant topic can be found.`,
+        subscribers: null,
+      };
+  res.render('subtopic', { ...data });
+});
+
+app.get('/cars', (req, res) => {
+  const carModels = {
+    ModelX: 'Electric Vehicle Manufactured by Tesla,Inc.',
+    LEAF: 'Electric Vehicle Manufactured by Nissan Motor Co., Ltd.',
+    MachE: 'Electric SUV Manufactured by Ford',
+  };
+  res.render('cars', { carModels });
 });
 // app.get('/cats/black', (req, res) => {
 //   res.send('<h1>Cats Pages--- black cats</h1>');

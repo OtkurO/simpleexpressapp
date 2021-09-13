@@ -1,0 +1,60 @@
+{
+  "travel": {
+    "name": "Travel",
+    "subscribers": 8000,
+    "description": "The Travel Group. News and discussions about travelling.",
+    "posts": [
+      {
+        "title": "Sunshine, shore, sand on so on.",
+        "author": "Mark Twain"
+      },
+      {
+        "title": "Seiner has come back from international travel.",
+        "author": "Single Ton"
+      },
+      {
+        "title": "News: London lorem ipsum summit.",
+        "author": "Newly Joined"
+      }
+    ]
+  },
+  "technology": {
+    "name": "Technology",
+    "subscribers": 34346,
+    "description": "A place to post scientific knowledge, or news about technology!",
+    "posts": [
+      {
+        "title": "Automotive industry has grown 20% this year.",
+        "author": "Sam Thinge",
+        "img": "https://cdn.pixabay.com/photo/2015/12/08/00/28/car-1081742_1280.jpg"
+      },
+      {
+        "title": "My five year old had to go to coding school, and here is why?",
+        "author": "Jon Von Duvon",
+        "img": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+      },
+      {
+        "title": "I guess the VR startup has to try one more time.",
+        "author": "Tina Tobha",
+        "img": "https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80"
+      }
+    ]
+  },
+  "pets": {
+    "name": "Pets",
+    "subscribers": 311323,
+    "description": "Days of our pets' lives.",
+    "posts": [
+      {
+        "title": "My daughter's first cat experience, which made me so proud of the little girl.",
+        "author": "Mbapo Kana",
+        "img": "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80"
+      },
+      {
+        "title": "I think I will never find the dog food I needed.",
+        "author": "Rower Tinelikos",
+        "img": "https://images.unsplash.com/photo-1596491123074-fd69f1b7c12d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+      }
+    ]
+  }
+}
