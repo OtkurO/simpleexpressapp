@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-  </head>
+  <%- include("partials/head") %>
   <body>
-    <h1>
-      Home Page - <%= `Random Number: ${randomNumber}. Sum: ${sum} `%> Rendered
-      with EJS
-    </h1>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, velit
-      eveniet in, reprehenderit voluptas dolor quis asperiores fugit quam ex
-      saepe? Architecto velit in aperiam? Repellendus, natus distinctio? Quidem,
-      at! Minimaa. Dolor ea atque enim, eum aut exercitationem culpa asperiores
-      totam facere fugit placeat quidem labore ratione.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae in vel
-      saepe, enim nemo natus suscipit possimus facilis nihil praesentium
-      mollitia quisquam provident nobis explicabo aliquid blanditiis voluptatum
-      eligendi labore? Enim exercitationem doloremque ratione tenetur eligendi
-      numquam quo esse nihil accusamus itaque magni rerum, reiciendis blanditiis
-      odio officiis iure sed obcaecati doloribus aliquam dolor inventore
-      repudiandae dolorem! Assumenda, optio sit?
-    </p>
+    <%- include("partials/navbar") %>
+    <div class="container">
+      <h1>
+        Home Page - <%= `Random Number: ${randomNumber}. Sum: ${sum} `%>
+        Rendered with EJS
+      </h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis,
+        velit eveniet in, reprehenderit voluptas dolor quis asperiores fugit
+        quam ex saepe? Architecto velit in aperiam? Repellendus, natus
+        distinctio? Quidem, at! Minimaa. Dolor ea atque enim, eum aut
+        exercitationem culpa asperiores totam facere fugit placeat quidem labore
+        ratione.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae in vel
+        saepe, enim nemo natus suscipit possimus facilis nihil praesentium
+        mollitia quisquam provident nobis explicabo aliquid blanditiis
+        voluptatum eligendi labore? Enim exercitationem doloremque ratione
+        tenetur eligendi numquam quo esse nihil accusamus itaque magni rerum,
+        reiciendis blanditiis odio officiis iure sed obcaecati doloribus aliquam
+        dolor inventore repudiandae dolorem! Assumenda, optio sit?
+      </p>
+    </div>
   </body>
 </html>
